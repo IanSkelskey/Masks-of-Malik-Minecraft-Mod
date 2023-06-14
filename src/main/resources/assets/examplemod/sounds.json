@@ -1,0 +1,10 @@
+{
+  "dan_disc_sound": {
+    "sounds": [
+      {
+        "name": "examplemod:dan_disc_sound",
+        "stream": true
+      }
+    ]
+  }
+}
