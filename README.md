@@ -1,8 +1,10 @@
 # Masks of Malik Mod
 
-This is a mod inspired by the band Masks of Malik for a server owned by Dan Corcoran and Ian Skelskey.
+This mod was inspired by the band Masks of Malik for a server owned by Dan Corcoran and Ian Skelskey.
 
-It contains a demo disc that plays a song by Masks of Malik.
+## Features
+
+Currently, the mod only contains one custom item—a demo disc for the latest single from the band Masks of Malik from Connecticut.
 
 ## Contributors
 
