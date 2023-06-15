@@ -4,9 +4,7 @@ This mod was inspired by the band Masks of Malik for a server owned by Dan Corco
 
 ## Features
 
-Currently, the mod only contains one custom item—a demo disc for the latest single from the band Masks of Malik from Connecticut.
-
-- ![](src/main/resources/assets/masksofmalik/textures/item/malik_demo_disc.png) Malik Demo
+- ![](src/main/resources/assets/masksofmalik/textures/item/malik_demo_disc.png) Malik Demo - Pop it in the jukebox and see what all the hype is about!
   
 ## Contributors
 
