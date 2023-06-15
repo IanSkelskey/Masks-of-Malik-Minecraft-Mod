@@ -1,8 +1,8 @@
 {
-  "dan_disc_sound": {
+  "malik_demo": {
     "sounds": [
       {
-        "name": "examplemod:dan_disc_sound",
+        "name": "masksofmalik:malik_demo",
         "stream": true
       }
     ]

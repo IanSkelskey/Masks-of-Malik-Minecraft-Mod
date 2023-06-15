@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "examplemod:item/dan_disc"
+    "layer0": "masksofmalik:item/malik_demo_disc"
   }
 }
