@@ -1,22 +1,21 @@
-package com.ianskelskey.masksofmalik.painting;
+package com.ianskelskey.masksofmalik.registry;
 
+import com.ianskelskey.masksofmalik.paintings.CatPainting;
+import com.ianskelskey.masksofmalik.paintings.MalikPainting;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 
 import static com.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
 
-public class ModPaintings {
+public class PaintingRegistry {
     public static final DeferredRegister<PaintingVariant> PAINTINGS =
             DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, MODID);
 
-    public static void register(IEventBus modEventBus) {
+    public static void registerAll(IEventBus modEventBus) {
         PAINTINGS.register(modEventBus);
-        PAINTINGS.register("malik_painting",
-                () -> new PaintingVariant(16, 16));
-        PAINTINGS.register("cat_painting",
-                () -> new PaintingVariant(64, 64));
+        PAINTINGS.register(MalikPainting.NAME, MalikPainting::new);
+        PAINTINGS.register(CatPainting.NAME, CatPainting::new);
     }
 }

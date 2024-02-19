@@ -1,4 +1,4 @@
-package com.ianskelskey.masksofmalik.sound;
+package com.ianskelskey.masksofmalik.sounds;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;

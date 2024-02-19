@@ -1,8 +1,8 @@
 package com.ianskelskey.masksofmalik;
 
-import com.ianskelskey.masksofmalik.item.ModItems;
-import com.ianskelskey.masksofmalik.painting.ModPaintings;
-import com.ianskelskey.masksofmalik.sound.ModSounds;
+import com.ianskelskey.masksofmalik.registry.ItemRegistry;
+import com.ianskelskey.masksofmalik.registry.PaintingRegistry;
+import com.ianskelskey.masksofmalik.sounds.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,9 +20,9 @@ public class MasksOfMalikMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
-        ModItems.register(modEventBus);
+        ItemRegistry.registerAll(modEventBus);
+        PaintingRegistry.registerAll(modEventBus);
         ModSounds.register(modEventBus);
-        ModPaintings.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
