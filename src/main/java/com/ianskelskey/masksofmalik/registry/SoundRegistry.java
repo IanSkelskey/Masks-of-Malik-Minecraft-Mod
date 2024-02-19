@@ -1,4 +1,4 @@
-package com.ianskelskey.masksofmalik.sounds;
+package com.ianskelskey.masksofmalik.registry;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -9,7 +9,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import static com.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
 
-public class ModSounds {
+public class SoundRegistry {
+
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MODID);
     public static final RegistryObject<SoundEvent> MALIK_DEMO = registerSoundEvent("malik_demo");
 
@@ -19,7 +20,7 @@ public class ModSounds {
         return SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(id));
     }
 
-    public static void register(IEventBus modEventBus) {
+    public static void registerAll(IEventBus modEventBus) {
         SOUNDS.register(modEventBus);
     }
 }
