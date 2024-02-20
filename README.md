@@ -18,6 +18,10 @@ This mod was inspired by the band Masks of Malik for a server owned by Dan Corco
 4. Run `gradlew build` to build the mod
 5. Run `gradlew runClient` to run the mod
 
+## Installation
+
+After running `gradlew build`, the mod jar file will be located in `build/libs/`. Copy the jar file to the `mods` folder of your Minecraft installation.
+
 ## Contributors
 
 - Ian Skelskey - Code
