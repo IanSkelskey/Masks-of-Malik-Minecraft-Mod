@@ -7,14 +7,15 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.RecordItem;
 
-public class MalikDemoDiscItem extends RecordItem implements TabbedItem {
+public class MalikDemoDiscItem extends RecordItem implements ITabbedItem {
 
     public static final String NAME = "malik_demo_disc";
     private static final int RECORD_DURATION = 6740;
     private static final ResourceKey<CreativeModeTab> TAB = CreativeModeTabs.TOOLS_AND_UTILITIES;
+    private static final Properties PROPERTIES = new Item.Properties().fireResistant();
 
     public MalikDemoDiscItem() {
-        super(15, SoundRegistry.MALIK_DEMO, new Item.Properties(), RECORD_DURATION);
+        super(15, SoundRegistry.MALIK_DEMO, PROPERTIES, RECORD_DURATION);
     }
 
     @Override

@@ -1,7 +1,7 @@
 package io.github.ianskelskey.masksofmalik.registry;
 
 import io.github.ianskelskey.masksofmalik.items.MalikDemoDiscItem;
-import io.github.ianskelskey.masksofmalik.items.TabbedItem;
+import io.github.ianskelskey.masksofmalik.items.ITabbedItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,9 +23,9 @@ public class ItemRegistry {
     private static void addItemsToCreativeInventory(BuildCreativeModeTabContentsEvent event) {
         ITEMS.getEntries().stream()
                 .map(RegistryObject::get)
-                .filter(item -> item instanceof TabbedItem)
+                .filter(item -> item instanceof ITabbedItem)
                 .forEach(item -> {
-                    if (((TabbedItem) item).getCreativeModeTab() == event.getTabKey()) {
+                    if (((ITabbedItem) item).getCreativeModeTab() == event.getTabKey()) {
                         event.accept(item);
                     }
                 });
