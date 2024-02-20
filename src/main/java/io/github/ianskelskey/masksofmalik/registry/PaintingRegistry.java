@@ -1,13 +1,13 @@
-package com.ianskelskey.masksofmalik.registry;
+package io.github.ianskelskey.masksofmalik.registry;
 
-import com.ianskelskey.masksofmalik.paintings.CatPainting;
-import com.ianskelskey.masksofmalik.paintings.MalikPainting;
+import io.github.ianskelskey.masksofmalik.paintings.CatPainting;
+import io.github.ianskelskey.masksofmalik.paintings.MalikPainting;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import static com.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
+import static io.github.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
 
 public class PaintingRegistry {
     public static final DeferredRegister<PaintingVariant> PAINTINGS =

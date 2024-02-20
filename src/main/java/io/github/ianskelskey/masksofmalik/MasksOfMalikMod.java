@@ -1,8 +1,8 @@
-package com.ianskelskey.masksofmalik;
+package io.github.ianskelskey.masksofmalik;
 
-import com.ianskelskey.masksofmalik.registry.ItemRegistry;
-import com.ianskelskey.masksofmalik.registry.PaintingRegistry;
-import com.ianskelskey.masksofmalik.registry.SoundRegistry;
+import io.github.ianskelskey.masksofmalik.registry.ItemRegistry;
+import io.github.ianskelskey.masksofmalik.registry.PaintingRegistry;
+import io.github.ianskelskey.masksofmalik.registry.SoundRegistry;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;

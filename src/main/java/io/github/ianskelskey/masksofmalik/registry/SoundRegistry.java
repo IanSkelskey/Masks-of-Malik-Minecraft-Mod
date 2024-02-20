@@ -1,4 +1,4 @@
-package com.ianskelskey.masksofmalik.registry;
+package io.github.ianskelskey.masksofmalik.registry;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static com.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
+import static io.github.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
 
 public class SoundRegistry {
 

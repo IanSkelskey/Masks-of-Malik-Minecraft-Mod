@@ -1,15 +1,15 @@
-package com.ianskelskey.masksofmalik.registry;
+package io.github.ianskelskey.masksofmalik.registry;
 
-import com.ianskelskey.masksofmalik.items.MalikDemoDiscItem;
-import com.ianskelskey.masksofmalik.items.TabbedItem;
+import io.github.ianskelskey.masksofmalik.items.MalikDemoDiscItem;
+import io.github.ianskelskey.masksofmalik.items.TabbedItem;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static com.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
+import static io.github.ianskelskey.masksofmalik.MasksOfMalikMod.MODID;
 
 public class ItemRegistry {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
@@ -20,12 +20,12 @@ public class ItemRegistry {
         modEventBus.addListener(ItemRegistry::addItemsToCreativeInventory);
     }
 
-    private static void addItemsToCreativeInventory(CreativeModeTabEvent.BuildContents event) {
+    private static void addItemsToCreativeInventory(BuildCreativeModeTabContentsEvent event) {
         ITEMS.getEntries().stream()
                 .map(RegistryObject::get)
                 .filter(item -> item instanceof TabbedItem)
                 .forEach(item -> {
-                    if (((TabbedItem) item).getCreativeModeTab() == event.getTab()) {
+                    if (((TabbedItem) item).getCreativeModeTab() == event.getTabKey()) {
                         event.accept(item);
                     }
                 });

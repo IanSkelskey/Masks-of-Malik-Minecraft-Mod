@@ -1,4 +1,4 @@
-package com.ianskelskey.masksofmalik.paintings;
+package io.github.ianskelskey.masksofmalik.paintings;
 
 import net.minecraft.world.entity.decoration.PaintingVariant;
 
