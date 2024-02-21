@@ -7,7 +7,7 @@ This mod was inspired by the band Masks of Malik for a server owned by Dan Corco
 | Asset                                                                            | Feature        | Description                                         |
 |----------------------------------------------------------------------------------|----------------|-----------------------------------------------------|
 | ![](src/main/resources/assets/masksofmalik/textures/item/malik_demo_disc.png)    | Malik Demo     | A music disc that plays a song by Masks of Malik    |
-| ![](src\main\resources\assets\masksofmalik\textures\item\staff_weapon.png)       | Staff          | A wooden walking stick that can be used as a weapon |
+| ![](src/main/resources/assets/masksofmalik/textures/item/staff_weapon.png)       | Staff          | A wooden walking stick that can be used as a weapon |
 | ![](src/main/resources/assets/masksofmalik/textures/painting/malik_painting.png) | Malik Painting | A painting of the band logo                         |
 | ![](src/main/resources/assets/masksofmalik/textures/painting/cat_painting.png)   | Kitty Painting | A painting of a kitty                               |
 
