@@ -2,6 +2,7 @@ package io.github.ianskelskey.masksofmalik.registry;
 
 import io.github.ianskelskey.masksofmalik.items.MalikDemoDiscItem;
 import io.github.ianskelskey.masksofmalik.items.ITabbedItem;
+import io.github.ianskelskey.masksofmalik.items.StaffWeaponItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,7 @@ public class ItemRegistry {
     public static void registerAll(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
         ITEMS.register(MalikDemoDiscItem.NAME, MalikDemoDiscItem::new);
+        ITEMS.register(StaffWeaponItem.NAME, StaffWeaponItem::new);
         modEventBus.addListener(ItemRegistry::addItemsToCreativeInventory);
     }
 
