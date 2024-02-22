@@ -1,6 +1,23 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "masksofmalik:item/staff_weapon"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "masksofmalik:item/staff_weapon"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [3.18, 90, -12.7],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 0]
+		}
+	}
 }

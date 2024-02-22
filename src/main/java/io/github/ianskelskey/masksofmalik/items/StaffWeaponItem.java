@@ -10,10 +10,11 @@ public class StaffWeaponItem extends SwordItem implements ITabbedItem {
     private static final ResourceKey<CreativeModeTab> TAB = CreativeModeTabs.COMBAT;
     private static final Properties PROPERTIES = new Item.Properties().stacksTo(1).durability(100).rarity(Rarity.UNCOMMON);
     private static final int ATTACK_DAMAGE = 3;
-    private static final float ATTACK_SPEED = -2.4F;
+    private static final float ATTACK_SPEED = 2.4F;
+    private static final Tier TIER = Tiers.WOOD;
 
     public StaffWeaponItem() {
-        super(Tiers.DIAMOND, ATTACK_DAMAGE, ATTACK_SPEED, PROPERTIES);
+        super(TIER, ATTACK_DAMAGE, ATTACK_SPEED, PROPERTIES);
     }
 
     @Override
